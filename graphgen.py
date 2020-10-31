@@ -11,7 +11,7 @@ def print_1(G):
         buf = buf[:-1]
         print(buf)
 
-# function: generates a graph with V vertices, E edges, where each vertex has indegree I
+# function: generates a directed graph with V vertices, E edges, where each vertex has indegree I
 # params: vertices,edges,indegree
 def generate_graph_1(V,E,I):
     G = [[0 for x in range(V)] for y in range(V)]
@@ -22,9 +22,9 @@ def generate_graph_1(V,E,I):
         xdeg = 0
         while xdeg < I:
             y = randrange(V)
-            if y != x and G[x][y] != 1:
+            if y != x and G[y][x] != 1:
                 E1 += 1
-                G[x][y] = 1
+                G[y][x] = 1
                 xdeg += 1
 
     # add more edges to reach E 
