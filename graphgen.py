@@ -38,7 +38,7 @@ def generate_graph_1(V,E,I):
     print_1(G)
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Short sample app')
+    parser = argparse.ArgumentParser(description='Graph generator tool')
     parser.add_argument('--indegree' , type=int, help='indegree of each node')
     parser.add_argument('--vertices' , type=int, help='number of vertices for the graph')
     parser.add_argument('--edges'    , type=int, help='number of edges for the graph')
