@@ -11,7 +11,7 @@ def print_1(G):
         buf = buf[:-1]
         print(buf)
 
-# function: generates a graph with a given V vertices, E edges, where each vertex has indegree I
+# function: generates a graph with V vertices, E edges, where each vertex has indegree I
 # params: vertices,edges,indegree
 def generate_graph_1(V,E,I):
     G = [[0 for x in range(V)] for y in range(V)]
